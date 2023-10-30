@@ -1,0 +1,11 @@
+prog: 	memory.o memory-test.o
+	gcc memory.o memory-test.o -o project1
+
+memory.o:	memory.c
+	gcc -c memory.c
+
+memory-test.o:	memory-test.c
+	gcc -c memory-test.c
+
+clean:	rm memory-test.o memory.o project1
+
